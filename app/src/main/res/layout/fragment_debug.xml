@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_margin="@dimen/_24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- All actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Patients -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patients"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="results"
+                    android:id="@+id/debug_results"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_margin="@dimen/_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/debug_results_image_view"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/debug_but_patient_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Read/Delete"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="patient patientId"
+                        android:id="@+id/debug_patient_get_uid"/>
+                    <Button
+                        android:text="Get"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/debug_but_patient_get"/>
+
+                    <Button
+                        android:id="@+id/debug_but_patient_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delete" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="fname"
+                        android:id="@+id/debug_patient_fname"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="lname"
+                        android:id="@+id/debug_patient_lname"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="health#"
+                        android:id="@+id/debug_patient_healthcard"/>
+
+                    <Button
+                        android:id="@+id/debug_but_patient_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/debug_but_patient_fake_hc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fake HealthCard" />
+
+                <Button
+                    android:id="@+id/debug_but_patient_fake_user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fake User" />
+
+        </LinearLayout> <!-- End patient -->
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
